@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_row"
+    android:paddingStart="@dimen/margin_row"
+    android:paddingBottom="@dimen/margin_row"
+    android:paddingRight="@dimen/margin_row"
+    android:paddingEnd="@dimen/margin_row"
+    android:paddingTop="@dimen/margin_details"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cardosoedgar.beerapp.BeerActivity"
+    tools:showIn="@layout/activity_beer">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/beer_image"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:id="@+id/favorite_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="London Pride"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:textColor="@color/darkText"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/beer_name"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/margin_row"
+        android:layout_marginRight="@dimen/margin_row"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_toStartOf="@id/favorite_button"
+        android:layout_toLeftOf="@id/favorite_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:text="Estilo: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_below="@id/beer_name"
+        android:id="@+id/beer_style_label"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:text="Premium Bitter"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/beer_style_label"
+        android:id="@+id/beer_style"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_style_label"
+        android:layout_toEndOf="@id/beer_style_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Cervejaria: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_below="@id/beer_style_label"
+        android:id="@+id/beer_brewery_label"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:text="Fuller's"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/beer_brewery_label"
+        android:id="@+id/beer_brewery"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_brewery_label"
+        android:layout_toEndOf="@id/beer_brewery_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="País: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_below="@id/beer_brewery_label"
+        android:id="@+id/beer_country_label"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:text="Inglaterra"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/beer_country_label"
+        android:id="@+id/beer_country"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_country_label"
+        android:layout_toEndOf="@id/beer_country_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="ABV: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_below="@id/beer_country_label"
+        android:id="@+id/beer_abv_label"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:text="4.7%"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/beer_abv_label"
+        android:id="@+id/beer_abv"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_abv_label"
+        android:layout_toEndOf="@id/beer_abv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Temperatura: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_below="@id/beer_abv_label"
+        android:id="@+id/beer_temp_label"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:text="3 a 5ºC"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/beer_temp_label"
+        android:id="@+id/beer_temp"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_temp_label"
+        android:layout_toEndOf="@id/beer_temp_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Copo Ideal: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_below="@id/beer_temp_label"
+        android:id="@+id/beer_glass_label"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:ellipsize="end"
+        android:layout_marginTop="24dp"
+        android:text="English Pint, Nonic, Shaker"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/beer_glass_label"
+        android:id="@+id/beer_glass"
+        android:textColor="@color/lightText"
+        android:maxLines="2"
+        android:layout_toRightOf="@id/beer_glass_label"
+        android:layout_toEndOf="@id/beer_glass_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollDescription"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_marginTop="@dimen/margin_row"
+        android:layout_below="@id/beer_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="A London Pride é uma cerveja tipo Ale Premium Clássica. É a marca premium número um do Reino Unido. É suave e de sabor complexo. Possui uma base de malte diferenciada complementada por um rico balanço com sabores de lúpulo das variedades Target, Challenger e Northdown na fermentação. É bastante encorpada e oferece um saboroso tom de frutas. Esta cerveja é ideal para acompanhar salsichas, linguiça, grelhados e costelinhas."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_alignTop="@id/scrollDescription"
+        android:background="@drawable/score_bg"
+        android:layout_below="@id/beer_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/pontuacao_label"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:text="Pontuação"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_below="@id/pontuacao_label"
+            android:layout_centerHorizontal="true"
+            android:text="100"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:id="@+id/beer_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

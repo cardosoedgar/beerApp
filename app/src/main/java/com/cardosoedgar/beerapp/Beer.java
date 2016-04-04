@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
  */
 public class Beer {
 
-    @SerializedName("name") String nome;
+    @SerializedName("nome") String nome;
     @SerializedName("paisDeOrigem") String paisDeOrigem;
     @SerializedName("estilo") String estilo;
     @SerializedName("cervejaria") String cervejaria;
@@ -17,4 +17,6 @@ public class Beer {
     @SerializedName("aparencia") String aparencia;
     @SerializedName("descricao") String descricao;
     @SerializedName("ratebeercom") String ratebeercom;
+    @SerializedName("score") String score;
+    @SerializedName("imagem") String imagem;
 }

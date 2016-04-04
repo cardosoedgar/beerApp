@@ -1,6 +1,8 @@
 package com.cardosoedgar.beerapp;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -25,7 +27,7 @@ public class Utils {
         }
     }
 
-    public static String loadJSONFromAsset(Context context) {
+    private static String loadJSONFromAsset(Context context) {
         String json = null;
         try {
             InputStream is = context.getAssets().open("beers.json");
@@ -39,5 +41,15 @@ public class Utils {
             return null;
         }
         return json;
+    }
+
+    public static Drawable getImageFromAssets(Context context, String imageName) {
+        try {
+            InputStream ims = context.getAssets().open(imageName+".png");
+            return Drawable.createFromStream(ims, null);
+        }
+        catch(IOException ex) {
+            return null;
+        }
     }
 }

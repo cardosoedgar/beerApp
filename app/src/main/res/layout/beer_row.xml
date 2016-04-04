@@ -2,8 +2,81 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="16dp">
 
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/beer_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"/>
 
+    <ImageView
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:id="@+id/favorite_button"
+        android:layout_margin="@dimen/margin_row"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:textColor="@color/darkText"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/beer_name"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/margin_row"
+        android:layout_marginRight="@dimen/margin_row"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_toStartOf="@id/favorite_button"
+        android:layout_toLeftOf="@id/favorite_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:layout_below="@id/beer_name"
+        android:id="@+id/beer_style"
+        android:textColor="@color/lightText"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/margin_row"
+        android:layout_marginRight="@dimen/margin_row"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_toStartOf="@id/favorite_button"
+        android:layout_toLeftOf="@id/favorite_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/margin_row"
+        android:layout_marginStart="@dimen/margin_row"
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/score_bg"
+        android:layout_toRightOf="@id/beer_image"
+        android:layout_toEndOf="@id/beer_image"
+        android:layout_below="@id/beer_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/beer_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
